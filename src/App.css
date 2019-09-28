@@ -1,22 +1,50 @@
-.App {
-  text-align: center;
+.wrap{
+    width: 1200px;
+    height: 600px;
+    position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
+.ul-list{
+    list-style: none;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.ul-list .list-item{
+position: absolute;
+top: 0px;
+width: 1200px;
+height: 600px;
 }
-
-.App-link {
-  color: #09d3ac;
+.ul-list .list-item img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.list-item.active{
+    z-index: 100;
+}
+.btn{
+    position: absolute;
+    top: 0px;
+    width: 40px;
+    height: 80px;
+    border: 1px solid black;
+    z-index: 1000;
+    background-color: black;
+    color: rgba(105, 54, 112, 0.8)
+}
+.btn:active {
+background-color: rgba(135, 124, 136, 0.116);
+color: hsla(216, 23%, 91%, 0.937);
+}
+.left{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.right{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
 }
